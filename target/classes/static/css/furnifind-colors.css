@@ -1,0 +1,36 @@
+/* 
+ * Sports Colors - Color Scheme for Kenny Sports
+ * This file defines the color palette for the Kenny Sports e-commerce platform
+ */
+
+:root {
+  /* Sports color palette */
+  --furnifind-primary: #0052cc; /* Strong blue - primary brand color */
+  --furnifind-secondary: #ff5722; /* Vibrant orange - for CTAs and highlights */
+  --furnifind-accent: #4caf50; /* Green - for success states and actions */
+  --furnifind-light: #f5f9ff; /* Light blue tint - for backgrounds */
+  --furnifind-dark: #172b4d; /* Dark blue-gray - for text and headers */
+  --furnifind-gray: #8a9cb0; /* Medium gray - for secondary text */
+  --furnifind-success: #4caf50; /* Green - for success states */
+  --furnifind-danger: #f44336; /* Red - for errors and alerts */
+  --furnifind-warning: #ffb300; /* Amber - for warnings */
+  --furnifind-info: #03a9f4; /* Light blue - for info messages */
+
+  /* Override existing variables for compatibility */
+  --book-primary: var(--furnifind-primary);
+  --book-secondary: var(--furnifind-secondary);
+  --book-accent: var(--furnifind-accent);
+  --book-dark: var(--furnifind-dark);
+  --book-light: var(--furnifind-light);
+  --coffee-accent: var(--furnifind-accent);
+  --coffee-dark: var(--furnifind-dark);
+  --bookbyte-primary: var(--furnifind-primary);
+  --bookbyte-secondary: var(--furnifind-secondary);
+  --bookbyte-accent: var(--furnifind-accent);
+  --bookbyte-light: var(--furnifind-light);
+  --bookbyte-dark: var(--furnifind-dark);
+
+  /* Typography */
+  --furnifind-heading-font: "Montserrat", sans-serif;
+  --furnifind-body-font: "Open Sans", sans-serif;
+}

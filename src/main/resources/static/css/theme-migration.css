@@ -1,0 +1,76 @@
+/* 
+ * Sports Theme Migration Guide
+ * This file contains CSS variable mappings to help migrate from coffee-themed
+ * variables to sports-themed variables. In future updates, direct use of --coffee-*
+ * variables should be replaced with their --book-* equivalents.
+ */
+
+:root {
+  /* Legacy mappings - these ensure backward compatibility */
+  --coffee-primary: var(--book-primary);
+  --coffee-dark: var(--book-dark);
+  --coffee-light: var(--book-light);
+  --coffee-accent: var(--book-accent);
+  --coffee-medium: var(--book-secondary);
+  --coffee-bg: var(--book-bg);
+
+  /* New color scheme - Sports Theme */
+  --furnifind-primary: #0052cc; /* Strong blue - primary brand color */
+  --furnifind-secondary: #ff5722; /* Vibrant orange - for CTAs and highlights */
+  --furnifind-accent: #4caf50; /* Green - for success states and actions */
+  --furnifind-light: #f5f9ff; /* Light blue tint - for backgrounds */
+  --furnifind-dark: #172b4d; /* Dark blue-gray - for text and headers */
+  --furnifind-gray: #8a9cb0; /* Medium gray - for secondary text */
+  --furnifind-success: #4caf50; /* Green - for success states */
+  --furnifind-danger: #f44336; /* Red - for errors and alerts */
+  --furnifind-warning: #ffb300; /* Amber - for warnings */
+  --furnifind-info: #03a9f4; /* Light blue - for info messages */
+
+  /* Override existing variables for compatibility */
+  --book-primary: var(--furnifind-primary);
+  --book-secondary: var(--furnifind-secondary);
+  --book-accent: var(--furnifind-accent);
+  --book-dark: var(--furnifind-dark);
+  --book-light: var(--furnifind-light);
+  --coffee-primary: var(--furnifind-primary);
+  --coffee-secondary: var(--furnifind-secondary);
+  --coffee-accent: var(--furnifind-accent);
+  --coffee-dark: var(--furnifind-dark);
+  --coffee-light: var(--furnifind-light);
+  --cream: var(--furnifind-light);
+  --book-accent: var(--furnifind-accent);
+  --book-dark: var(--furnifind-dark);
+  --book-light: var(--furnifind-light);
+  --coffee-accent: var(--furnifind-accent);
+  --coffee-dark: var(--furnifind-dark);
+  --bookbyte-primary: var(--furnifind-primary);
+  --bookbyte-secondary: var(--furnifind-secondary);
+  --bookbyte-accent: var(--furnifind-accent);
+  --bookbyte-light: var(--furnifind-light);
+  --bookbyte-dark: var(--furnifind-dark);
+
+  /* Sports theme color palette */
+
+  --book-tertiary: #8b5cf6; /* Purple */
+  --book-bg: #f8fafc; /* Off-white */
+  --book-text: #1e293b; /* Slate */
+  --book-muted: #94a3b8; /* Slate-300 */
+  --book-highlight: #f59e0b; /* Amber-500 */
+
+  /* Font families */
+  --book-title-font: "Playfair Display", Georgia, serif;
+  --book-body-font: "Merriweather", Georgia, serif;
+  --book-heading-font: "Roboto Slab", serif;
+}
+
+/*
+ * USAGE GUIDE:
+ * 
+ * 1. For new development, always use the --book-* variables
+ * 2. When refactoring existing code, replace --coffee-* with --book-* equivalents
+ * 3. The variable mappings above ensure backward compatibility
+ *
+ * Example:
+ *   Old: color: var(--coffee-accent);
+ *   New: color: var(--book-accent);
+ */
